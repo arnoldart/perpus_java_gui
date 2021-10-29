@@ -73,7 +73,7 @@ public class perpus_gui extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 24));
         jLabel1.setText("Selamat Datang di Aplikasi Perpustakaan");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -189,6 +189,12 @@ public class perpus_gui extends javax.swing.JFrame {
         jLabel8.setText("Judul");
 
         jLabel9.setText("Stock");
+
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Simpan");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -440,6 +446,10 @@ public class perpus_gui extends javax.swing.JFrame {
         Object [] data = {KodeProgram, NamaPeminjam, NIS,  KodeBukuPeminjaman, TanggalPinjam };
         TableModelPeminjaman.addRow(data);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
 
     /**
     * @param args the command line arguments
