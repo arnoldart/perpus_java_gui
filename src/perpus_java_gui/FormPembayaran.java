@@ -137,13 +137,13 @@ public class FormPembayaran extends javax.swing.JFrame {
         pajak = jumlahBarang * hargaBarang + ((jumlahBarang * hargaBarang) * 10/100);
         jTextField3.setText(Integer.toString(pajak));
 
-        if(pajak >= 50000) {
+        if(pajak >= 500000) {
             jTextField4.setText("Mendapatkan Bonus");
-
+            
             return;
         }
 
-        jTextField4.setText("tidak Mendapatkan Bonus");
+        jTextField4.setText("Tidak Mendapatkan Bonus");
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
